@@ -1,0 +1,19 @@
+<div class="__dd__text is--@@bg">
+    <div class="__dd__text__inner">
+        @@if(headings == "true") {
+            @@for(var i = 0; i < parags.length; i++) {
+                <div class="__dd__text__heading">`+parags[i].heading+`</div>
+                <div class="__dd__text__content">
+                    <p>`+parags[i].text+`</p>
+                </div>
+            }
+        }
+        @@if(headings == "false") {
+            @@for(var i = 0; i < parags.length; i++) {
+                <div class="__dd__text__content">
+                    <p>`+parags[i].text+`</p>
+                </div>
+            }
+        }
+    </div>
+</div>

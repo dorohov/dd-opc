@@ -9,9 +9,86 @@
 </head>
 <body>
     <div class="__dd">
-        
+        @@include('blocks/block.banner-carousel.html')
+        @@include('blocks/block.text.html', {
+            "headings": "true",
+            "bg": "bg-block is--b",
+            "parags": [
+                {
+                    "heading": "О проекте:",
+                    "text": "Перинатальный центр Орла — ведущее учреждение в области по оказанию квалифицированной помощи в области акушерства, гинекологии и неонатологии. Этот родильный дом, исследует и успешно применяет на практике инновационные разработки в сфере акушерства и гинекологии, имеет лучшее высокочувствительное оборудование, позволяющее проводить наиболее точный мониторинг состояния мам и детей"
+                },
+                {
+                    "heading": "О задаче:",
+                    "text": "Проблемой, которую необходимо было решить, стало полное отсутствие информационной структурированной системы навигации для огромного масштаба учреждения. Более 18 отделений, разделённых на 3 корпуса, от 5 до 7 этажей в каждом. Многим пациентам приходится долгое время искать нужный корпус, переход или подходящий кабинет, ориентироваться по центру было абсолютно неудобно."
+                }
+            ]
+        })
+        <div class="__dd__photos is--bg-block is--v">
+            <div class="__dd__photos__container">
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w50"><img src="img/img1.jpg" alt=""></div>
+                    <div class="__dd__photos__block is--w50"><img src="img/img2.jpg" alt=""></div>
+                </div>
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w100"><img src="img/img3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        @@include('blocks/block.image.html', {
+            "id": "one",
+            "img": "b_img1.png",
+            "text": "Для решения проблемы мы разработали полностью новый формат навигации по медицинскому учреждению с указанием многоуровневой информации, использовав все виды информационных указателей:"
+        })
+        <div class="__dd__photos is--bg-block is--a1 is--a2">
+            <div class="__dd__photos__container">
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w100"><img src="img/img4.jpg" alt=""></div>
+                </div>
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w100"><img src="img/img5.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        @@include('blocks/block.image.html', {
+            "id": "two",
+            "img": "b_img2.png",
+            "text": "В процессе реализации, для навигационных табличек мы использовали дорогой качественный материал без негативных характеристик, которые могли бы навредить здоровью пациентов."
+        })
+        <div class="__dd__photos">
+            <div class="__dd__photos__container">
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w50"><img src="img/img21.jpg" alt=""></div>
+                    <div class="__dd__photos__block is--w50"><img src="img/img22.jpg" alt=""></div>
+                </div>
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w50"><img src="img/img23.jpg" alt=""></div>
+                    <div class="__dd__photos__block is--w50"><img src="img/img24.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        @@include('blocks/block.text.html', {
+            "headings": "false",
+            "bg": "default",
+            "parags": [
+                {
+                    "text": "Как результат мы изготовили комплект удобной системы навигации, с помощью которой посетители и пациенты без проблем могут добраться в нужное отделение за короткий срок. Такого уровня навигации ранее ещё не было  в учреждениях Орла такого плана. Качество выполненной работы на высшем уровне было отмечено персоналом, руководством центра, а также его посетителями и пациентами."
+                }
+            ]
+        })
+        <div class="__dd__photos">
+            <div class="__dd__photos__container">
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w100"><img src="img/img6.jpg" alt=""></div>
+                </div>
+                <div class="__dd__photos__blocks">
+                    <div class="__dd__photos__block is--w50"><img src="img/img7.jpg" alt=""></div>
+                    <div class="__dd__photos__block is--w50"><img src="img/img8.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
 </body>
 </html>
